@@ -3,12 +3,6 @@ Modèles de documents LaTeX d'usage courant
 
 Pour connaître la version en cours, voir le fichier **VERSION.md**.
 
-* Pour la dernière branche stable pour la production voir:
-	* https://github.com/egide/latex.template/tree/stable
-* Pour la branche en cours de préparation voir:
-	* https://github.com/egide/latex.template/tree/master
-
-
 Ce que le projet fait
 ---------------------
 Ce dépôt est prévu pour gérer des modèles de documents courants.
@@ -60,5 +54,3 @@ Avec deux modifications liées à l'usage de github:
 
 * La branche de *développement* est la branche **master**.
 * Celle contenant la dernière version de *production* est la branche **stable**.
-
-
