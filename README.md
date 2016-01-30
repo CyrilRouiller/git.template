@@ -1,12 +1,6 @@
 Modèles de documents LaTeX d'usage courant
 ==========================================
 
-* Pour la dernière branche stable pour la production voir:
-	* https://github.com/egide/latex.template/tree/stable
-* Pour la branche en cours de préparation voir:
-	* https://github.com/egide/latex.template/tree/master
-
-
 Ce que le projet fait
 ---------------------
 Ce dépôt est prévu pour gérer des modèles de documents courants.
@@ -54,3 +48,4 @@ Il vous suffit donc de cloner le dépôt pour tout avoir sous la main.
 Utilisation
 -----------
 Ce dépôt est géré par GIT. Pour le workflov je suis, scrupuleusement, gitflow.
+
