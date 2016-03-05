@@ -6,11 +6,13 @@
 	headings=small,% petite écriture pour les titres
 	cleardoublepage=empty,% pas de numéro de page pour les pages blanches
 	numbers=noenddot,% supprime le point à la fin de la numérotation des titres
+	fontsize=12pt,
 ]{scrartcl}
 
 %<1 Paquets usuels
 \RequirePackage[utf8]{inputenc}     % Le document en entrée doit être en utf8
 \RequirePackage[T1]{fontenc}        % pour les diacritiques française
+\usepackage{lmodern}                % police adaptée au PDF
 \RequirePackage{xspace}             % gestion correcte des espaces après les macros
 \RequirePackage{lipsum}             % pour avoir du texte d'essais
 \RequirePackage{hyperref}           % Gestion des liens hypertex et du PDF
