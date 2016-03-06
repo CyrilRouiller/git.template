@@ -29,4 +29,5 @@
 	{cinq}
 	{six}
 \pagestyle{pstexte}
+\linespread{1.25}% correspond à un interligne de 1,5
 
