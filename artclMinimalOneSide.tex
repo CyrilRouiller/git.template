@@ -1,32 +1,28 @@
 %<1 Définitions
-
 \documentclass[%<2
-	pdftex,
-	frenchb,
-	twoside=true,
-	headsepline,
-	footsepline,
-	headings=normal,
+	pdftex,%								compilation directe en pdf
+	frenchb,%							Document en français
+	headsepline,%						Entête séparée par une ligne
+	footsepline,%						Pied de page séparé par une ligne
+	headings=normal,%					Titres un petit peu plus petits
 ]{scrartcl}
 
 %<2 Packets
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{xspace}
-\usepackage{hyperref}
-\usepackage{scrlayer-scrpage}
-\usepackage{geometry}
-\usepackage{babel}
-\usepackage{enumitem}
+\usepackage[utf8]{inputenc}%		Code source en UTF8
+\usepackage[T1]{fontenc}%			Codage pour le français
+\usepackage{lmodern}%				Police propre à l'écran
+\usepackage{xspace}%					Gestion des espaces en fin de macro
+\usepackage{url}%						Pour pouvoir imprimer les URL
+\usepackage{scrlayer-scrpage}%	Gestion de la décoration de page
+\usepackage{geometry}%				Gestion des marges
+\usepackage{babel}%					Gestion des langues
 
 \geometry{%<2 Marges
-	includeall,%
-	nomarginpar,
-	vmargin=8mm,%
-	hmargin=8mm,%
-	bindingoffset=8mm,%
-	% footskip=1cm,%
+	includeall,%						Compte les marges hors tout
+	nomarginpar,%						Sans notes marginales
+	vmargin=8mm,%						Marges haut et bas
+	hmargin=8mm,%						Marges gauche et droites
+	bindingoffset=8mm,%				Marge de reliure
 }
 
 %<2 Décoration de page
