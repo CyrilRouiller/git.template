@@ -1,0 +1,10 @@
+$out_dir        = "build";
+$pdf_mode       = "1";
+$pdf_previewer  = "evince";
+$preview_mode   = "0";
+@generated_exts = ('aux','bbl','idx','ind','lof','lot','out','toc','$fdb_ext','nav','snm','fls','synctex.gz');
+$pdflatex       = "pdflatex -synctex=1 -interaction=nonstopmode -pdf";
+
+#ligne originale de texmaker:
+# latexmk -e "$pdflatex=q/pdflatex -synctex=1 -interaction=nonstopmode/" -pdf %.tex
+# $pdflatex       = "pdflatex -synctex=1 -interaction=nonstopmode -pdf %S";
