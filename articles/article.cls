@@ -4,7 +4,6 @@
 \LoadClass[
 	titlepage,% Page de titre séparée
 	headings=small,% petite écriture pour les titres
-	cleardoublepage=empty,% pas de numéro de page pour les pages blanches
 	numbers=noenddot,% supprime le point à la fin de la numérotation des titres
 	fontsize=12pt,
 ]{scrartcl}
@@ -19,14 +18,19 @@
 \RequirePackage[frenchb]{babel}           % gestion des langues
 
 %<1 Décoration de page
-\RequirePackage[automark]{scrlayer-scrpage}
+\RequirePackage{scrlayer-scrpage}
+\def\partcourt{NomCourtDePartie}
+\def\sectioncourt{NomCourtDeSection}
+\renewcommand{\partmark}[1]{\def\partcourt{#1}}
+\renewcommand{\sectionmark}[1]{\def\sectioncourt{#1}}
+
 \deftriplepagestyle{pstexte}
 	[0.1pt]
-	{un}
-	{deux}
+	{\thepart -- \thesection}
+	{\markright}
 	{\thepage}
-	{quatre}
-	{cinq}
+	{\partcourt}
+	{\sectioncourt}
 	{six}
 \pagestyle{pstexte}
 \linespread{1.25}% correspond à un interligne de 1,5
