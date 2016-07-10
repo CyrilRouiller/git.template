@@ -1,4 +1,6 @@
-\documentclass[%<1
+%<1 Définitions
+
+\documentclass[%<2
 	pdftex,
 	frenchb,
 	twoside=true,
@@ -6,6 +8,8 @@
 	footsepline,
 	headings=normal,
 ]{scrartcl}
+
+%<2 Packets
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -16,6 +20,15 @@
 \usepackage{babel}
 \usepackage{enumitem}
 
+\geometry{%<2 Marges
+	includeall,%
+	nomarginpar,
+	vmargin=8mm,%
+	hmargin=8mm,%
+	bindingoffset=8mm,%
+	% footskip=1cm,%
+}
+
 %<2 Décoration de page
 \lehead{}
 \rehead{}
@@ -25,16 +38,8 @@
 \lofoot{}
 \ofoot[]{\thepage}
 
+%<2 Formatage
 \setcounter{secnumdepth}{-2}
-
-\geometry{%<2
-	includeall,%
-	nomarginpar,
-	vmargin=8mm,%
-	hmargin=8mm,%
-	bindingoffset=8mm,%
-	% footskip=1cm,%
-}
 
 \begin{document}%<1
 
